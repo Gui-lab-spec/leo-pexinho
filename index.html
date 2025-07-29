@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Léo Pexinho - Peixes Ornamentais</title>
+  <title>Léo Pexinho - Catálogo Completo</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,10 +33,16 @@
       max-width: 1000px;
       margin: auto;
     }
-    .catalogo {
+    h2 {
+      border-bottom: 2px solid #004d40;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .catalogo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1rem;
+      margin-top: 1rem;
     }
     .produto {
       background-color: white;
@@ -44,12 +50,18 @@
       padding: 1rem;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
+      transition: transform 0.2s ease;
+    }
+    .produto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     .produto img {
       max-width: 100%;
       height: 150px;
       object-fit: cover;
       border-radius: 5px;
+      margin-bottom: 0.5rem;
     }
     footer {
       text-align: center;
@@ -94,28 +106,91 @@
       <p><strong>Confira alguns dos nossos peixes, aquários e acessórios.</strong><br>
       Para saber os preços, entre em contato diretamente pelo WhatsApp abaixo 👇</p>
 
-      <div class="catalogo">
+      <!-- Peixes Ornamentais -->
+      <h3>Peixes Ornamentais</h3>
+      <div class="catalogo-grid">
         <div class="produto">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Betta_fish_female.jpg" alt="Peixe Betta">
-          <h3>Peixe Betta</h3>
+          <h4>Peixe Betta</h4>
           <p>Colorido e resistente, ideal para iniciantes.</p>
         </div>
         <div class="produto">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Tetra_neon.jpg" alt="Tetra Neon">
-          <h3>Tetra Neon</h3>
+          <h4>Tetra Neon</h4>
           <p>Pequeno e brilhante, ótimo para aquários plantados.</p>
         </div>
         <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Aquarium_plants.jpg" alt="Plantas Aquáticas">
-          <h3>Plantas Naturais</h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Goldfish3.jpg" alt="Peixe Goldfish">
+          <h4>Peixe Goldfish</h4>
+          <p>Popular e de fácil cuidado, ótimo para aquaristas iniciantes.</p>
+        </div>
+      </div>
+
+      <!-- Aquários -->
+      <h3>Aquários</h3>
+      <div class="catalogo-grid">
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Freshwater_aquarium_1.jpg" alt="Aquário Pequeno">
+          <h4>Aquário Pequeno</h4>
+          <p>Ideal para ambientes compactos e peixes pequenos.</p>
+        </div>
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Aquarium_2012_04_14_24.jpg" alt="Aquário Médio">
+          <h4>Aquário Médio</h4>
+          <p>Perfeito para uma variedade maior de peixes e plantas.</p>
+        </div>
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Aquarium_aquascape.jpg" alt="Aquário Grande">
+          <h4>Aquário Grande</h4>
+          <p>Ambiente espaçoso para peixes e plantas ornamentais.</p>
+        </div>
+      </div>
+
+      <!-- Plantas Aquáticas -->
+      <h3>Plantas Aquáticas</h3>
+      <div class="catalogo-grid">
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Aquarium_plants.jpg" alt="Plantas Naturais">
+          <h4>Plantas Naturais</h4>
           <p>Decore e oxigene seu aquário com estilo natural.</p>
         </div>
         <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Fish_tank_ornaments.jpg" alt="Enfeites">
-          <h3>Enfeites Decorativos</h3>
-          <p>Estilo e diversão para o seu aquário.</p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Elodea_canadensis.jpg" alt="Elódea">
+          <h4>Elódea</h4>
+          <p>Planta de fácil cultivo que ajuda na qualidade da água.</p>
         </div>
       </div>
+
+      <!-- Enfeites -->
+      <h3>Enfeites</h3>
+      <div class="catalogo-grid">
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Fish_tank_ornaments.jpg" alt="Enfeites Decorativos">
+          <h4>Enfeites Decorativos</h4>
+          <p>Estilo e diversão para o seu aquário.</p>
+        </div>
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Artificial_aquarium_rock.jpg" alt="Pedras Artificiais">
+          <h4>Pedras Artificiais</h4>
+          <p>Adicione textura e cor ao fundo do seu aquário.</p>
+        </div>
+      </div>
+
+      <!-- Rações -->
+      <h3>Rações</h3>
+      <div class="catalogo-grid">
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Fish_food.jpg" alt="Ração para Peixes">
+          <h4>Ração para Peixes</h4>
+          <p>Alimentação balanceada para peixes ornamentais.</p>
+        </div>
+        <div class="produto">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Fish_flakes_in_bowl.jpg" alt="Flocos de Ração">
+          <h4>Flocos de Ração</h4>
+          <p>Fácil de usar e altamente nutritiva para peixes pequenos.</p>
+        </div>
+      </div>
+
     </section>
 
     <section id="sobre" style="margin-top: 3rem;">
@@ -126,11 +201,11 @@
     <section id="contato" style="margin-top: 3rem;">
       <h2>Entre em Contato</h2>
       <p>Quer saber os preços ou fazer um pedido? Fale direto com a gente pelo WhatsApp:</p>
-      <p><a href="https://wa.me/5521990060130" target="_blank" style="font-size: 1.2rem; color: #00695c;"><strong>(21) 99006-0130</strong></a></p>
+      <p><a href="https://wa.me/5521964329792" target="_blank" style="font-size: 1.2rem; color: #00695c;"><strong>(21) 96432-9792</strong></a></p>
     </section>
   </div>
 
-  <a href="https://wa.me/5521990060130" class="zap-float" target="_blank" title="Fale conosco no WhatsApp">💬</a>
+  <a href="https://wa.me/5521964329792" class="zap-float" target="_blank" title="Fale conosco no WhatsApp">💬</a>
 
   <footer>
     <p>&copy; 2025 Léo Pexinho - Todos os direitos reservados</p>
