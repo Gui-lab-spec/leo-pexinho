@@ -1,217 +1,178 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Léo Pexinho - Catálogo Completo</title>
+  <title>Léo Pexinho | Peixes e Aquários</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
+      padding: 0;
       background-color: #e0f7fa;
-      color: #003d33;
+      color: #004d40;
     }
     header {
-      background-color: #00695c;
+      background-color: #00796b;
       color: white;
+      text-align: center;
       padding: 1rem;
+    }
+    .contato-topo {
+      background-color: #004d40;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
       text-align: center;
     }
+    .contato-topo a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
     nav {
-      background-color: #004d40;
+      background-color: #00695c;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
       padding: 0.5rem;
-      text-align: center;
     }
     nav a {
       color: white;
-      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
     }
-    .container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
     h2 {
-      border-bottom: 2px solid #004d40;
-      padding-bottom: 0.5rem;
-      margin-top: 2rem;
+      color: #00796b;
     }
-    .catalogo-grid {
+    .catalogo {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
       margin-top: 1rem;
     }
-    .produto {
-      background-color: white;
-      border-radius: 8px;
+    .item {
+      background: white;
       padding: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       text-align: center;
-      transition: transform 0.2s ease;
-    }
-    .produto:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    }
-    .produto img {
-      max-width: 100%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 5px;
-      margin-bottom: 0.5rem;
     }
     footer {
-      text-align: center;
       background-color: #004d40;
       color: white;
-      padding: 1rem;
-      margin-top: 2rem;
+      text-align: center;
+      padding: 2rem 1rem;
     }
-    .zap-float {
+    .footer-links {
+      margin: 1rem 0;
+    }
+    .footer-links a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+    .zap-float, .insta-float {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 50%;
       width: 60px;
       height: 60px;
+      border-radius: 50%;
+      font-size: 30px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 30px;
+      color: white;
       text-decoration: none;
       box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .zap-float {
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+    }
+    .insta-float {
+      bottom: 90px;
+      right: 20px;
+      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     }
   </style>
 </head>
 <body>
+
+  <div class="contato-topo">
+    <a href="https://wa.me/5521964329792" target="_blank">📞 WhatsApp: (21) 96432-9792</a>
+    <a href="https://www.instagram.com/leopeixinho2025/" target="_blank">📸 Instagram: @leopeixinho2025</a>
+  </div>
+
   <header>
     <h1>Léo Pexinho</h1>
-    <p>Venda local de peixes ornamentais, aquários e acessórios</p>
+    <p>Peixes, Aquários, Plantas e Acessórios de Água Doce</p>
   </header>
 
   <nav>
-    <a href="#catalogo">Catálogo</a>
     <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="https://wa.me/5521964329792" target="_blank">Contato</a>
   </nav>
 
-  <div class="container">
-    <section id="catalogo">
-      <h2>Catálogo de Produtos</h2>
-      <p><strong>Confira alguns dos nossos peixes, aquários e acessórios.</strong><br>
-      Para saber os preços, entre em contato diretamente pelo WhatsApp abaixo 👇</p>
+  <section id="sobre">
+    <h2>Sobre a Léo Pexinho</h2>
+    <p>
+      Léo Pexinho é uma loja especializada em peixes ornamentais e acessórios para aquários de água doce. 
+      Com anos de experiência e paixão pelo aquarismo, oferecemos atendimento personalizado e produtos de qualidade para os amantes desse hobby. 
+      Nosso compromisso é ajudar você a montar e cuidar do seu aquário com carinho e segurança, sempre prezando pela saúde dos peixes e beleza do ambiente.
+    </p>
+  </section>
 
-      <!-- Peixes Ornamentais -->
-      <h3>Peixes Ornamentais</h3>
-      <div class="catalogo-grid">
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Betta_fish_female.jpg" alt="Peixe Betta">
-          <h4>Peixe Betta</h4>
-          <p>Colorido e resistente, ideal para iniciantes.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Tetra_neon.jpg" alt="Tetra Neon">
-          <h4>Tetra Neon</h4>
-          <p>Pequeno e brilhante, ótimo para aquários plantados.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Goldfish3.jpg" alt="Peixe Goldfish">
-          <h4>Peixe Goldfish</h4>
-          <p>Popular e de fácil cuidado, ótimo para aquaristas iniciantes.</p>
-        </div>
+  <section id="catalogo">
+    <h2>Catálogo</h2>
+    <p>Confira alguns dos produtos que temos. Para saber os preços, entre em contato pelo WhatsApp.</p>
+    <div class="catalogo">
+      <div class="item">
+        <h3>Peixes Ornamentais</h3>
+        <p>Espécies variadas de água doce, coloridas e saudáveis.</p>
       </div>
-
-      <!-- Aquários -->
-      <h3>Aquários</h3>
-      <div class="catalogo-grid">
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Freshwater_aquarium_1.jpg" alt="Aquário Pequeno">
-          <h4>Aquário Pequeno</h4>
-          <p>Ideal para ambientes compactos e peixes pequenos.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Aquarium_2012_04_14_24.jpg" alt="Aquário Médio">
-          <h4>Aquário Médio</h4>
-          <p>Perfeito para uma variedade maior de peixes e plantas.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Aquarium_aquascape.jpg" alt="Aquário Grande">
-          <h4>Aquário Grande</h4>
-          <p>Ambiente espaçoso para peixes e plantas ornamentais.</p>
-        </div>
+      <div class="item">
+        <h3>Aquários</h3>
+        <p>Diversos tamanhos e modelos prontos para montar seu habitat aquático.</p>
       </div>
-
-      <!-- Plantas Aquáticas -->
-      <h3>Plantas Aquáticas</h3>
-      <div class="catalogo-grid">
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Aquarium_plants.jpg" alt="Plantas Naturais">
-          <h4>Plantas Naturais</h4>
-          <p>Decore e oxigene seu aquário com estilo natural.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Elodea_canadensis.jpg" alt="Elódea">
-          <h4>Elódea</h4>
-          <p>Planta de fácil cultivo que ajuda na qualidade da água.</p>
-        </div>
+      <div class="item">
+        <h3>Plantas Aquáticas</h3>
+        <p>Plantas naturais que ajudam na oxigenação e estética do aquário.</p>
       </div>
-
-      <!-- Enfeites -->
-      <h3>Enfeites</h3>
-      <div class="catalogo-grid">
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Fish_tank_ornaments.jpg" alt="Enfeites Decorativos">
-          <h4>Enfeites Decorativos</h4>
-          <p>Estilo e diversão para o seu aquário.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Artificial_aquarium_rock.jpg" alt="Pedras Artificiais">
-          <h4>Pedras Artificiais</h4>
-          <p>Adicione textura e cor ao fundo do seu aquário.</p>
-        </div>
+      <div class="item">
+        <h3>Enfeites</h3>
+        <p>Pedras, troncos, castelos e muito mais para deixar seu aquário incrível.</p>
       </div>
-
-      <!-- Rações -->
-      <h3>Rações</h3>
-      <div class="catalogo-grid">
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Fish_food.jpg" alt="Ração para Peixes">
-          <h4>Ração para Peixes</h4>
-          <p>Alimentação balanceada para peixes ornamentais.</p>
-        </div>
-        <div class="produto">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Fish_flakes_in_bowl.jpg" alt="Flocos de Ração">
-          <h4>Flocos de Ração</h4>
-          <p>Fácil de usar e altamente nutritiva para peixes pequenos.</p>
-        </div>
+      <div class="item">
+        <h3>Rações</h3>
+        <p>Alimentos de qualidade para peixes de todos os tipos e tamanhos.</p>
       </div>
-    </section>
-
-    <section id="sobre" style="margin-top: 3rem;">
-      <h2>Sobre a Léo Pexinho</h2>
-      <p>
-        Léo Pexinho é uma loja especializada em peixes ornamentais e acessórios para aquários de água doce. 
-        Com anos de experiência e paixão pelo aquarismo, oferecemos atendimento personalizado e produtos de qualidade para os amantes desse hobby. 
-        Nosso compromisso é ajudar você a montar e cuidar do seu aquário com carinho e segurança, sempre prezando pela saúde dos peixes e beleza do ambiente.
-      </p>
-    </section>
-
-    <section id="contato" style="margin-top: 3rem;">
-      <h2>Entre em Contato</h2>
-      <p>Quer saber os preços ou fazer um pedido? Fale direto com a gente pelo WhatsApp:</p>
-      <p><a href="https://wa.me/5521964329792" target="_blank" style="font-size: 1.2rem; color: #00695c;"><strong>(21) 96432-9792</strong></a></p>
-    </section>
-  </div>
-
-  <a href="https://wa.me/5521964329792" class="zap-float" target="_blank" title="Fale conosco no WhatsApp">💬</a>
+    </div>
+  </section>
 
   <footer>
+    <h3>Fale com a gente</h3>
+    <div class="footer-links">
+      <a href="https://wa.me/5521964329792" target="_blank">💬 WhatsApp</a>
+      <a href="https://www.instagram.com/leopeixinho2025/" target="_blank">📸 Instagram</a>
+    </div>
     <p>&copy; 2025 Léo Pexinho - Todos os direitos reservados</p>
   </footer>
+
+  <!-- Botões flutuantes -->
+  <a href="https://wa.me/5521964329792" class="zap-float" title="Fale conosco no WhatsApp" target="_blank">💬</a>
+  <a href="https://www.instagram.com/leopeixinho2025/" class="insta-float" title="Siga no Instagram" target="_blank">📸</a>
+
 </body>
 </html>
